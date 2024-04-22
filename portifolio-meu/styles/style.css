@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --fonte-primaria: "Roboto", sans-serif;
+    --fonte-secundaria:  "Montserrat", sans-serif;
+}
+
+body{
+    background-image: url("degrade-back.png");
+}
+
+#h1{
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+}
+
+aside{
+    display: none;
+}
+
+a{
+    border: 1px solid blue;
+}
+
+a:hover{
+    background-color: rgb(73, 106, 197);
+    transition: .7s;
+
+    border-radius: 25px;
+}
+
+
+#h3{
+    font-family: var(--fonte-secundaria);
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 2;
+}
+
+@media screen and (min-width: 768px){
+    body{
+        background-image: url("degrade-back.png");
+    }    
+
+    a{
+        border: none;
+    }
+}
+
+@media screen and (min-width: 992px){
+
+    aside{
+        display: block;
+        height: 100vh;
+        max-width: 22vw;
+        background-color: #201f1f;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+
+        width: 5%;
+        margin-top: 20px;
+        margin-right: 20px;
+
+        cursor: pointer;
+    }
+
+    a{
+        border: none;
+    }
+}
